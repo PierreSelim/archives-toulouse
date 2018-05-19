@@ -1,0 +1,856 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+<!--Date modification 09/11/16-->
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Notice d&eacute;taill&eacute;e</title>
+ <meta name="Description" content="Chercheurs, généalogistes, enseignants, curieux ? Cherchez et trouvez des archives, photographies, permis de construire, etc. principalement sur Toulouse." />
+<link rel="canonical" href="" />
+ <meta name="keywords" content="archives, toulouse, image, images, photographie, photographies, plan, plans, carte, cartes, dessin, dessins, cartes postales, carte postale, maquette, maquettes, permis de construire, architecture, urbanisme, histoire, patrimoine, délibérations, délibération, numérisé, numérisés" />
+<!-- meta f -->
+<!-- meta t -->
+<!-- meta dublincore -->
+<meta name="DC.Titre" content="Les archives : DIRECTION DES ARCHIVES MUNICIPALES DE TOULOUSE" /><!-- champ : Titre du site -->
+<meta name="DC.Creator" content="Di'X, AvenioWeb, DIRECTION DES ARCHIVES MUNICIPALES DE TOULOUSE " /><!-- donnees fixes et champ : nom service -->
+<meta name="DC.Subject" content="Publication de fonds d'archives" /><!-- champ : sujets -->
+<meta name="DC.Description" lang="fr" content="<!-- variable avec description du site -->" /><!-- champ : description -->
+<meta name="DC.Publisher" content="DIRECTION DES ARCHIVES MUNICIPALES DE TOULOUSE" /><!-- champ : publie par -->
+<meta name="DC.Date.created" scheme="W3CDTF" content="2005-11-19" /><!-- donnees fixes -->
+<meta name="DC.Date.Available" scheme="W3CDTF" content="19/05/2018" /><!-- champ : date de mise en ligne -->
+<meta name="DC.Language" scheme="RFC3066" content="fr-FR" /><!-- donnees fixes -->
+<meta name="DC.Rights" content="Le site et son contenu appartiennent &agrave; : Soci&eacute;t&eacute; Di'X, DIRECTION DES ARCHIVES MUNICIPALES DE TOULOUSE"/><!-- champ : nom du service -->
+<link href="/htm/css/screen_mod1_style.css" rel="stylesheet" type="text/css" /><link rel="stylesheet" href="/htm/css/postit.css" type="text/css" /><link rel="stylesheet" href="/htm/css/boutons.css" type="text/css" /><link rel="shortcut icon" type="image/ico" href="/htm/img/favicons/favicon_rose.ico" /><script src="/htm/js/dtree.js" language="javascript" type="text/javascript"></script>
+<link href="/htm/css/print1.css" rel="stylesheet" type="text/css" media="print" />
+<script src="/htm/js/pageprec.js" language="javascript" type="text/javascript"></script><script src="/htm/js/styleswitcher.js" language="javascript" type="text/javascript"></script><script src="/htm/js/soundpop.js" language="javascript" type="text/javascript"></script><script src="/htm/js/textsizer.js" language="javascript" type="text/javascript"></script>
+<script src="/htm/js/js_menu_acc.js" language="javascript" type="text/javascript"></script><script type="text/javascript" src="/htm/js/jquery-latest.min.js"></script>
+<script src="/htm/js/statistiques.js" language="javascript" type="text/javascript"></script><script src="/htm/js/alert_info.js" language="javascript" type="text/javascript"></script><script src="/htm/js/jquery.keyframes.min.js" language="javascript" type="text/javascript"></script>
+
+
+<script src="/htm/js/AC_ActiveX.js" language="JavaScript" type="text/javascript" ></script>
+<script src="/htm/js/AC_RunActiveContent.js" language="JavaScript" type="text/javascript"></script>
+<script src="/htm/js/popup.js" language="JavaScript" type="text/javascript"></script>
+<link href="/htm/css/popup.css" rel="stylesheet" type="text/css" />
+<style>
+table #tableau{
+border:0;
+}
+img{
+border:0;
+}
+.lien_pop{
+color:#0095DA;
+font: bold 0.7em arial, Helvetica, sans-serif;
+background: #fff;
+border:0.2px;
+}
+#message_{
+display:none;
+font: bold 1.3em "Arial";
+color: #ccc;
+margin-right:10%;
+float: center;
+}
+</style>
+<script>
+function Post4D(Web_Cre_TableauCheminDoc; valeurs)
+{
+var req = HTTPRequestObject ();
+if (req)
+{
+   req.setRequestHeader('Content-Type','application/xwww-form-urlencoded');
+   req.open("POST",'/4daction/'+Web_Cre_TableauCheminDoc+'/'+Math.random() ,false);
+   req.onreadystatechange=function()
+      {
+      if (req.readyState==4)
+         {
+            if(req.status!=200)
+               {
+                  req =false;
+               }
+         }
+      }
+   req.send(valeurs);
+   }
+return req;
+}
+</script>
+<style>
+.loader {
+position : fixed;
+z-index: 9999;
+background : url('/htm/img/loading.gif') 50% 50% no-repeat;
+top : 0px;
+left : 0px;
+height : 100%;
+width : 100%;
+cursor : wait;
+}
+
+info_bulle
+{
+  width      :  500px;
+  right     :  21px;
+  padding         : -22px 52px 52px 52px;
+}
+
+
+a.info_bulle
+{
+  color           : #2F368A;
+  text-decoration : none;
+  padding         : -22px 2px 2px 52px;
+ /* background      : transparent url('') no-repeat right center;*/
+  position        : relative;
+    border          : 2px;
+}
+
+a.info_bulle:hover
+{
+  border          : 0;
+}
+
+a.info_bulle span.info_bulle
+{
+  position   :  absolute;
+  top        :  -2000em;
+  left       :  -2000em;
+  width      :  1px;
+  height     :  1px;
+  overflow   :  hidden;
+}
+
+a.info_bulle:hover span.info_bulle, a.info_bulle:focus span.info_bulle, a.info_bulle:active span.info_bulle
+{
+  top        :  auto;
+  left       :  auto;
+  width      :  220px;
+  height     :  auto;
+  overflow   :  visible;
+}
+
+span.header
+{
+   display         : block;
+   height          : 35px;
+   line-height     : 220%;
+   text-align      : center;
+  /* background      : transparent url('') no-repeat 0 0;*/
+   font-size       : 15px;
+   font-weight     : bold;
+}
+
+span.content
+{
+   display     : block;
+  /* background  : transparent url('') repeat-y;*/
+   padding     : 0 8px;
+}
+
+span.footer
+{
+   display     : block;
+   height      : 5px;
+  /* background  : url('') no-repeat bottom left;*/
+   font-size   : 0;
+}
+textarea
+{
+  width      :  480px;
+}
+
+.go {
+text-indent:-5000px;
+width:24px;
+height:24px;
+border:none;
+background: transparent url(/htm/img/folder_add.png) no-repeat center center;
+}
+.hide {
+  display: none;
+}
+</style>
+<script src="/htm/js/arial_augm.js"language="JavaScript" type="text/javascript"></script>
+<link href="/htm/phone.css" rel="stylesheet" type="text/css" media="only screen and (min-device-width: 0px) and (max-device-width:700px)" >
+</head>
+<!-- Affichage origine-->
+<body>
+<!-- conteneur principal englobant toute la page -->
+<div id="conteneur">
+  <!-- barre accessibilite / accessibility bar -->
+  <div id="accessite">
+    <p><a href="#contenu" title="acc&egrave;der au formulaire de recherche ou aux r&eacute;sutats" accesskey="s" >aller au contenu</a>&nbsp;|&nbsp;<a href="#menurecherche" accesskey="n" title="acc&egrave;der aux menus du site">aller &agrave; la navigation</a></p>
+  </div>
+  <!-- entete / header -->
+  <div id="entete">
+    <div id="logoavenio">
+      <h1 class="cacher">AvenioWeb</h1>
+    </div>
+  </div>
+
+    <!-- barre de navigation / navigation bar -->
+
+    <!-- D'iX sas document le 15/01/2018 -->
+<!-- AvenioWebVersion1 -->
+
+
+<div id="navbar">
+<h2 class="cacher">Menu g&eacute;n&eacute;ral</h2>
+<ul class="topnav" id="myTopnav">
+
+<!--lien1-->
+<li><a href="/4DCGI/Web_Custompage/accueil3.shtm/ILUMP6734" title="accueil">accueil</a></li>
+<!--fin1-->
+<!--lien1_1-->
+<!--fin1_1-->
+
+<!--lien2-->
+<li><a href="http://www.archives.toulouse.fr" target="_blank" title="site des Archives">site des Archives</a></li>
+<!--fin2-->
+<!--lien2_1-->
+<li><a href="https://www.urban-hist.toulouse.fr/" target="_blank" title="Urban-Hist, le patrimoine à la carte">Urban-Hist, le patrimoine à la carte</a></li>
+<!--fin2_1-->
+
+<!--lien3-->
+<li><a href="http://www.archives.toulouse.fr/nous-connaitre/contacts/demande-de-renseignements" target="_blank" title="Messagerie">Messagerie</a></li>
+<!--fin3-->
+<!--lien3_1-->
+<!--fin3_1-->
+
+<li><a href="/4DCGI/Web_Custompage/aide.shtm/ILUMP6734" title="le fonctionnement d&rsquo;AvenioWeb" accesskey="6">aide</a></li>
+
+<!--lien4-->
+<!--fin4-->
+<!--lien4_1-->
+<!--fin4_1-->
+
+
+<li><a href="#" onclick="document.getElementById('id01').style.display='block'" title="identifiez-vous en tant que service, lecteur, chercheur...">se connecter</a></li>
+
+
+
+
+
+
+
+<div class="blockadmin">
+
+
+
+
+
+</div>
+<div id="id01" class="loguser">
+<form name="form1" class="loguser-content animate" action="/4DCGI/Web_LogUser/ILUMP6734" method="post">
+<div class="logo">
+<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Fermer">&times;</span>
+<img src="/htm/img/utilisateur.png" alt="Utilisateur" class="Utilisateur">
+</div>
+<div class="log">
+
+<p><label for="utilisateur" class="label1">Utilisateur </label>
+<input type="text" name="wUtilisateur" id="utilisateur" value="" maxlength="30" class="zonesaisie" placeholder="Saisir votre identifiant Web"/></p>
+
+<p><label for="mpasse" class="label1">Mot de passe </label>
+<input type="password" name="wMotdepasse" id="mpasse" value="" maxlength="10" class="zonesaisie" /></p>
+<button type="submit" class="submit" onmouseover="this.className='submit_bas';" onmouseout="this.className='submit';" >Login</button>
+
+
+
+<button type="button" onclick="document.getElementById('id01').style.display='none'" class="btnFermer">Fermer</button>
+</div>
+</form>
+</div>
+<div id="id02" class="loguser">
+  <form name="form1" class="loguser-content animate" action="/4DCGI/Web_ReceptFormNewVisiteur/ILUMP6734" method="post">
+    <div class="logo">
+      <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Fermer">&times;</span>
+      <img src="/htm/img/utilisateur.png" alt="Utilisateur" class="Utilisateur">
+    </div>
+    <div class="log">
+    <p>Inscription</p>
+    <p>Renseignez les champs suivants et cliquez sur le bouton <strong>Lancer</strong> :</p>
+    <p><label for="nom" class="label1">Nom<span class="asterisque">*</span></label><input type="text" name="wnom" id="nom" class="zonesaisie" size="69%" /></p>
+    <!-- <p><label for="adresse" class="label1">Adresse</label><textarea name="wadresse" rows="2" cols="" class="zonesaisie" onfocus="this.className='focus'; select();" onblur="this.className='normal';"></textarea></p> -->
+    <p><label for="courriel" class="label1">Courriel<span class="asterisque">*</span></label><input type="text" name="wmail" id="courriel" maxlength="80" size="69%" class="zonesaisie" /></p>
+    <p><label for="courriel" class="label1">confirmation<span class="asterisque">*</span></label><input id="mailconfirm" name="mailconfirm" type="text" maxlength="80" size="69%" class="zonesaisie"/></p>
+    <p>
+    <p><label for="webid" class="label1">Identifiant Web<span class="asterisque">*</span></label><input type="text" name="webid" value="" id="id_web" maxlength="80" size="69%" class="zonesaisie" placeholder="Votre identifiant"/></p>
+    <!--<p><label for="mot_passe" class="label1">Mot de passe<span class="asterisque">*</span></label><input type="password" name="wmotdepasse" value="" id="mot_passe" maxlength="10" size="69%" class="zonesaisie" /></p>-->
+    <button type="submit" class="submit" onmouseover="this.className='submit_bas';" onmouseout="this.className='submit';">Lancer</button>
+    <p id="instruction">Les champs marqu&eacute;s d'un (<span class="asterisque">* </span>) doivent obligatoirement &ecirc;tre renseign&eacute;s. Ces donn&eacute;es seront conserv&eacute;es dans notre base afin de nous permettre de mieux vous servir lors de vos prochaines connexions &agrave; notre site.</p>
+   <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Fermer</button>
+   </div>
+  </form>
+</div>
+<script>
+var loguser = document.getElementById('id01');
+window.onclick = function(event) {
+    if (event.target == loguser) {
+        loguser.style.display = "none";
+    }
+}
+</script>
+<script>
+var loguser = document.getElementById('id02');
+window.onclick = function(event) {
+    if (event.target == loguser) {
+        loguser.style.display = "none";
+ }
+}
+</script>
+
+<li class="iconphone"><a href="javascript:void(0);" class="oop" style="font-size:15px;" onclick="phone_navbar()">&#9776;</a></li>
+</ul>
+<span style="font-size:15px;cursor:pointer" class="menuphone" onclick="ouvrirmenu()"><img src="/htm/img/menu_phone.png" width="40px" height="40px" class="cntrl" title="Fermer"></span>
+</div>
+
+
+<script>
+function phone_navbar() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+
+
+
+
+    <!-- barre de navigation / navigation bar2 -->
+
+  <!-- chemin de navigation / path of navigation -->
+  <div id="cheminsite">
+    <h2 class="cacher">Chemin de navigation</h2>
+  </div>
+  <!-- contenu principal / maincontent -->
+<div id="contenu">
+<div class="espace"></div>
+    <h2>
+
+
+
+
+
+     <b>Images</b>
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <!--Index-->
+
+
+
+
+
+
+
+
+
+    </h2>
+    <ul id="enligne">
+
+
+
+
+
+    Modes de recherche :
+    <a href="/4DCGI/Web_DFRechSimple/ILUMP6734" class="lien" title="Effectuer une recherche simple dans nos fonds">Avancée</a>
+    - <a href="/4DCGI/Web_DFLanceRech/ILUMP6734" title="Effectuer une recherche complexe dans nos fonds">Expert</a>
+    - <a href="/4DCGI/Web_DFRechGT/ILUMP6734" title="Vous effectuez une recherche en mode global texte">Simple</a>
+    - <a href="/4DCGi/web_fondsmcadre/34/ILUMP6734">Liste des fonds</a>
+
+
+
+
+
+
+
+
+
+    </ul>
+      <div id="notice">
+      <!-- ===================================================================== Fonds ================================================== -->
+
+      <!-- ============================================================= Fin Fonds ===================================================== -->
+      <!-- ===================================================== Articles =============================================================== -->
+
+      <!-- ===================================================== Articles Pi碥s============================================================== -->
+
+      <!-- ===================================================== Fin Articles Pieces================================================================= -->
+      <!-- ========================================== Documents figures ============================================================================= -->
+
+      <tr>
+      <td width="20px" style="border:0px solid green">
+      <a class="info_bulle" href="#">
+      <img src="/htm/img/link.png" border="0" />
+      <span class="info_bulle"><span class="header">Copier le lien ci-dessous</span><span class="content">
+      <textarea name="nom" value="dmc" onclick="this.focus();this.select()" readonly="readonly">basededonnees.archives.toulouse.fr/4DCGI/Web_VoirLaNotice/34_01/23Fi2/ILUMP99999</textarea></span><span class="footer">&nbsp;</span></span>
+      </a>
+      </td>
+      </tr>
+
+
+            <!-- ========================================== Documents figures ============================================================================= -->
+
+
+          <TABLE border="0" id="tableau_notice" cellspacing="0" width="100%">
+           <TR align="center">
+
+
+             <TD width="20%">
+               <p></p>
+
+
+
+                <a href="/4DCGI/Web_DFPict/034/23Fi2/ILUMP6734" target="_blank">
+
+
+               <!-- <a class="video" href="/4DCGI/Web_DFPict/034/<!-#4DVAR vCoteTraitee->/<!-#4DVAR vIdLog->">-->
+               <script src='/htm/codeVisu/js/jquery.js'></script>
+
+               <img src="data:image/jpg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/4QB2RXhpZgAATU0AKgAAAAgABAEaAAUAAAABAAAAPgEbAAUAAAABAAAARgEoAAMAAAABAAIAAIdpAAQAAAABAAAATgAAAAAAknwAAAGGoACSfAAAAYagAAKgAgAEAAAAAQAAAGSgAwAEAAAAAQAAAGQAAAAAAAD/4QDdaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLwA8P3hwYWNrZXQgYmVnaW49J++7vycgaWQ9J1c1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCc/Pg0KPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyI+PHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIi8+PC94OnhtcG1ldGE+DQo8P3hwYWNrZXQgZW5kPSd3Jz8+/9sAQwAUDg8SDw0UEhASFxUUGB4yIR4cHB49LC4kMklATEtHQEZFUFpzYlBVbVZFRmSIZW13e4GCgU5gjZeMfZZzfoF8/9sAQwEVFxceGh47ISE7fFNGU3x8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8/8AAEQgAZABkAwEiAAIRAQMRAf/EAB8AAAEFAQEBAQEBAAAAAAAAAAABAgMEBQYHCAkKC//EALUQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+v/EAB8BAAMBAQEBAQEBAQEAAAAAAAABAgMEBQYHCAkKC//EALURAAIBAgQEAwQHBQQEAAECdwABAgMRBAUhMQYSQVEHYXETIjKBCBRCkaGxwQkjM1LwFWJy0QoWJDThJfEXGBkaJicoKSo1Njc4OTpDREVGR0hJSlNUVVZXWFlaY2RlZmdoaWpzdHV2d3h5eoKDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uLj5OXm5+jp6vLz9PX29/j5+v/aAAwDAQACEQMRAD8A7OiiigAooooAKKKKACiiigAooooAKKKKACiiigDj7fWtRedlkucKoznYuecgDp+NVtO8RapNf+TJOHGSAPLUZPbtUMF+st/GVVCpUIFAIwTn/P41QjjeLWXG7Y6Sn270AdqNSuID/pBBySBwOMVHHrErsQCM7toHFZst0JtqEnHzZLfjVWNikwxyMbiOvsM0AdOt7K04XeNpUdh1q6rkjOawLV/MaTkAu3DNW1ajCEZyM8UATbm9aMt60HAHNCkN0oAMt61G8jL3NS4prDjpmgDOu57yNh5MvB6AqKzZdavAkbrIRhiHTYPT6etX7pUBIDmIZ544H4GsK6uN0Uu7l0uELY/z36/jQBLca9qEDhPtClgo3fIvX8qKw5neSVn3kBjkcUUARRBGc/Nglsc/zNOkjK3Z3MGLAEMDnrUNuHeVUXG5zhfc5qxdW8tvcjzFx8gOcj1xQBZhcxMjNwqknr1Of8K17bakUbpglyfmx1OOv4VmXAZEEaBgrHeu/n/POD+NJkxwqSuxGOAc5oA6Oz2SQRkfNIxLHsOv/wCqtGOcRrmTaAB27Vz1rJKgUKpcbcDP8NV5Z5TC/wA2Oij3FAHRSarbso2EkN3FTwS5RMdW5/rXJQE+UWWQEqpYgDoKltNTfzc85x8vPT0oA7QcimScDg81TtdTga3V5pFRscg1JLd20qgLKjk9ADQBRuC7Njo3pu4NYl+kbzFBwZPLJG3HIJyCKuX9/bupAOwjOMGsK5uMGCXfgtlc9Su08fzoAr3W17qXDcBsD2oqtDN8pyec+nWigAgyrhtxUg54q9qR824t289Z22EHAxt56VVgh3kjt7UlwhimjCfLkeuaANicyPJZL5sZbyhtCn7vpn34qWGLzIX81FPlygttPqc5rPjtpJED4G4jnLYqQLcpnHAxj5TnPOaAL94zWqO4HEbbOWyQSPX0xWPJdtJGIwxx1x9KbeSX0wdZC5Rm3FexPrUARgm35lPTp0oAVrn5NqZBPWn28rJkqcdqp7GV8Dk+1WmttsY2ttfuG70AWTckpyW74qJrs4+XIb1zVe28v5vOR329ApwB7micRA5jRlByQC2cdKAFNxIGBOfx5qLzcZ68Zx7ZFRthSBzTwC7fKhGRz6UAJFyp+tFPhR9p+U9fSigC3FP5SCQIjMW2hduRTL15JLiMSIEIXoABxn2oj3LIpwMq25eMYNMuZWmulL/wqAMDt/k0AaST3EC28cewB1yvyg+tSfap2fb5rZHDlUGAc+tU41JCMcZUDAOakYLs+dd3+65/lQA+4W9aNpIJZXVTggAcD61n+fKV3FmI9ya1ortgmEiIXngkY59qjErrb+QI4zHnODQBjNI7Nkkk/WpGld1xnHvV5YoVPMC5+v8A9ehhEnzCJQB6DP8AWgDOSOVTlFbJ7YzmmuZP4gR+Faiah5aBY+NpyAABzTJL6ST7wdvrQBlmNupVvyqUNIpA+bHfNXDMWH3W/KomfOPlb/vmgBInypyD19aKWIgqeD19KKAPQf7A0zOfso/77b/Gk/4RzSt+/wCyDd6+Y3+NalFAGf8A2Jp//PsP++m/xpp0DTGOTajPrvb/ABrSooAoDRrAD/UH/vtv8aX+x7DH/HuP++j/AI1eooAzzomnn/l3H4Ow/rUf/CO6WTk2uT7yMf61qUUAZw0LTV6WoH/Am/xpP7B03Ofs3/j7f41pUUAZp0HTD1tR/wB9N/jTT4c0o9bQf9/G/wAa1KKAMseHNKHS0H/fbf40VqUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFAH/2Q&#61;&#61;" class="img_notice" width="100" height="100" alt="JARDIN ROYAL" border="0" />
+               </a><p>
+               <span class="titre">Nombre d'image</span><span class="result">&nbsp;(1) </span>
+                </p>
+
+               </td>
+
+               <TD>
+               <p align="left" >23Fi2 - JARDIN ROYAL </p>
+               <p align="justify">
+                <span class="loupe" onclick="zxcZoomText(this,14,18,14)">
+
+               </span>
+               </p>
+               </td>
+               <TD>
+              </td>
+            </tr>
+                     <TR align="LEFT">
+                     <TD width="4.4%">
+                     </TD>
+                     <TD class="tab_premierecondition" width="100%">
+                     <span class="loupe" onclick="zxcZoomText(this,14,18,14)">
+
+
+
+                        <p></p>
+                        <span class="titre">Auteur(s) :</span><span class="lien"><a href="/4DCGI/Web_CallAuteursNotice23Fi2_34/ILUMP6734"> JEANSOU, Henri JANSOU dit [ Auteur ]</a></span>
+
+
+
+                        <br>
+                        <span class="titre">Type document :</span><span class="result">&nbsp;PHOTOGRAPHIE N&amp;B</span>
+
+
+                        <br>
+                        <span class="titre">Technique :</span><span class="result">&nbsp;Photographie</span>
+
+
+
+                        <br>
+                        <span class="titre">Format :</span><span class="result">&nbsp;9 X 13,5</span>
+
+
+
+
+                        <br>
+                        <span class="titre">Support :</span><span class="result">&nbsp;Papier</span>
+
+
+                        <br>
+                        <span class="titre">Etat mat&eacute;riel :</span><span class="result">&nbsp;Bon</span>
+
+                        <br><span class="titre">Série :  </span><span class="result">Fi - Documents Figurés </span><br><span class="titre">Sous-série : </span><span class="lien"><a href="/4DCGI/Web_fondsvisu/23Fi/ILUMP6734" title="23Fi">23Fi</a></span> - Fonds PRIVAT - <span class="lien"><a href="/4DCGI/Web_fondsvisu/23Fi/ILUMP6734" title="Voir le fonds d'origine">Voir le fonds d'origine</a></span><br><span class="titre">Producteur : </span><span class="lien"><a href="/4DCGI/Web_voirLaNotice/20_01/380/ILUMP6734" title="Privat (famille)">Privat (famille)</a></span>
+
+
+                        <br>
+                        <span class="titre">Origine du document :</span><span class="result">&nbsp;Fonds des Editions Privat.</span>
+
+
+                        <br>
+                        <span class="titre">Mode d'entr&eacute;e :</span><span class="result">&nbsp;Dépôt</span>
+
+
+                        <br>
+                        <span class="titre">Ann&eacute;e d'entr&eacute;e :</span><span class="result">&nbsp;2001</span>
+
+
+                        <br>
+                        <span class="titre">Li&eacute; &agrave; :</span>&nbsp;<span class="lien"><a href="/4DCGI/Web_voirnoticelie/11Z/ILUMP6734">&nbsp;11Z</a></span>
+
+
+                        <span class="titre">Ancienne cote :</span><span class="result">&nbsp;2Z30</span>
+                        <br>
+
+
+                         <br>
+                        <span class="titre">R&eacute;alis&eacute; en :</span><span class="result">&nbsp;</span>
+
+
+                        <br>
+                        <span class="titre"> Droits :</span><span class="result">&nbsp;Conditions spécifiques d’utilisation. Toute utilisation nécessite l&#39;autorisation du déposant. Pour plus d&#39;information contacter pascale.jacquelin@mairie-toulouse.fr</span>
+
+                        <br>
+
+                        <BR>
+                        <span class="titre">Original Consultable :</span><span class="result">&nbsp;NON</span>
+
+                        <!-- ====================================indexation======================================================== -->
+
+
+
+
+
+
+                        <br><br>
+                        <span class="titre">Termes d'indexation :</span>
+                        <span class="lien">&nbsp;- [Auteurs] <a href="/4DCGI/Web_VoirLaNotice/39_05/10316/ILUMP6734">JEANSOU, Henri JANSOU dit</a>,  - [Lieux] <a href="/4DCGI/Web_VoirLaNotice/8_04/2602/ILUMP6734">JARDIN ROYAL (jardin public)</a>, <a href="/4DCGI/Web_VoirLaNotice/8_04/2429/ILUMP6734">TOULOUSE (ville)</a>,  - [Personnes] <a href="/4DCGI/Web_VoirLaNotice/6_07/4386/ILUMP6734">JANSOU</a>,</span>
+                        <br>
+
+                        <br>
+
+                        <!-- fin indexation -->
+
+
+        <p></p>     </span>
+     </TD>
+ </TR>
+<br>
+<br>
+</TABLE>
+<!--finprint-->
+
+<!-- ============================================================= Fin Documents figures ========================================================= -->
+
+
+      <!-- ============================================================= Fin Documents figures ========================================================= -->
+      <!-- =============================================================== Films old version========================================================= -->
+
+      <!-- ============================================================= Fin Films old version ========================================================= -->
+      <!-- ============================================================= Audio-Vid&eacute;o ============================================================ -->
+
+      <!-- ============================================================= Fin Audio-Vid&eacute;o ========================================================= -->
+      <!-- ===================================================== AV_Sequence================================================================= -->
+
+      <!-- ===================================================== Fin AV_Sequence================================================================= -->
+      <!-- =================================================== Objets =========================================================================== -->
+
+      <!-- ============================================================= Fin Objets ========================================================= -->
+      <!-- ============================================================= Supports Num&eacute;riques ========================================================= -->
+
+      <!-- ============================================================= Fin Support Numerique ========================================================= -->
+      <!-- ================================================================ Sceaux ==================================================== -->
+
+      <!-- ============================================================= Fin Sceaux ========================================================= -->
+      <!-- ============================================================= Urbanisme ========================================================= -->
+
+      <!-- ============================================================= Fin Urbanisme ========================================================= -->
+      <!-- ============================================================= Deliberation ========================================================= -->
+
+      <!-- ============================================================= Fin Deliberation ========================================================= -->
+      <!-- ============================================================= Arretes ========================================================= -->
+
+      <!-- ============================================================= Fin Arretes ========================================================= -->
+      <!-- ============================================================= Actes ========================================================= -->
+
+      <!-- ============================================================= Fin Actes ========================================================= -->
+      <!-- ============================================================= Bibliotheque ========================================================= -->
+
+      <!-- ============================================================= Fin Bibliotheque ========================================================= -->
+      <!-- ============================================================= Periodiques ========================================================= -->
+
+      <!-- ============================================================= Fin Periodiques ========================================================= -->
+      <!-- ============================================================= Bulletinage ===========Exemplaire de p豩odique============================================== -->
+
+      <!-- ============================================================= Fin Bulletinage ========================================================= -->
+      <!-- ============================================================= Articles depouilles ========================================================= -->
+
+      <!-- ============================================================= Fin articles depouilles ========================================================= -->
+
+        <!-- ============================================================= Producteurs ========================================================= -->
+
+      <!-- ============================================================= Fin Producteurs ========================================================= -->
+
+      <!-- ============================================================= Index Edifice ========================================================= -->
+
+      <!-- ============================================================= Fin Index Edifice ========================================================= -->
+      <!-- ============================================================= Index Lieu ========================================================= -->
+
+      <!-- ============================================================= Fin Index Lieu ========================================================= -->
+      <!-- ============================================================= Index Personnel ========================================================= -->
+
+      <!-- ============================================================= Fin Index Personnel ========================================================= -->
+      <!-- ============================================================= Index Personne ========================================================= -->
+
+      <!-- ============================================================= Fin Index Personne ========================================================= -->
+      <!-- ============================================================= Index Organisme ========================================================= -->
+
+      <!-- ============================================================= Fin Index Organisme ========================================================= -->
+      <!-- ============================================================= Index IPS ================================================================== -->
+
+      <!-- =========================================================== Index Auteur ==================================== -->
+
+      <!-- ============================================================= Fin Index Auteurs ========================================================= -->
+    </div>
+    <p><br></p>
+<div class="bouton">
+
+<a href="javascript:retour();" accesskey="s" class="submit" onmouseover="this.className='submit_bas';" onmouseout="this.className='submit';" />Page pr&eacute;c&eacute;dente</a>
+</div>
+</div>
+
+
+
+<div id="menurecherche" class="phonemenu">
+<a href="javascript:void(0)" class="fermerbtn" onclick="fermermenu()">Fermer</a>
+ <!--29/08/15-->
+<!--#4DIF((<>LesMenusRecherches+vALMRech)=2)--><!--#4DENDIF-->
+<div id="recherches globales">
+
+<h3>Recherches globales</h3>
+
+<ul>
+<!--lien261-->
+<!--lien261_1-->
+<li><a href="/4DCGI/Web_Custompage/rechglobal.shtm/ILUMP6734">Sur tous les documents</a></li>
+<!--lien271-->
+<!--lien271_1-->
+
+
+<li><a href="/4DCGI/Web_Custompage/rg1.shtm/ILUMP6734">Sur les notices d&#39;indexation</a></li>
+<!--lien281-->
+<!--lien281_1-->
+</ul></div>
+<h2 class="cacher">Menu : rechercher</h2>
+
+<h3>Chercher des archives</h3>
+<div id="fonds">
+<ul>
+<!--lien1-->
+<!--lien1_1-->
+
+<li><a href="/4DCGI/Web_FondsChoix/ILUMP6734">Fonds et Versements</a></li>
+
+<!--lien2-->
+
+<li><a href="/4DCGI/WEB_ArticlesRechGT/ILUMP6734">Dossiers manuscrits</a></li>
+
+<!--lien2_1-->
+
+<li><a href="/4DCGI/Web_RegistresLance/ILUMP6734">Dossiers et registres numérisés</a></li>
+
+<!--lien3-->
+<!--lien3_1-->
+
+<!--lien4-->
+<!--lien4_1-->
+
+<li><a href="/4DCGI/Web_DFRechGT/ILUMP6734">Images</a></li>
+
+<!--lien5-->
+<!--lien5_1-->
+
+<!--lien6-->
+<!--lien6_1-->
+
+<li><a href="/4DCGI/Web_AvRechGT/ILUMP6734">Vidéos</a></li>
+
+<!--lien7-->
+<!--lien7_1-->
+
+<li><a href="/4DCGI/Web_ObjRechGT/ILUMP6734">Objets</a></li>
+
+<!--lien8-->
+<!--lien8_1-->
+
+<!--lien9-->
+<!--lien9_1-->
+
+<li><a href="/4DCGI/Web_SceauxRechGT/ILUMP6734">Sceaux</a></li>
+
+<!--lien10-->
+<!--lien10_1-->
+
+<li><a href="/4DCGI/Web_DelibsRechGT/ILUMP6734">D&eacute;lib&eacute;rations</a></li>
+
+<!--lien11-->
+<!--lien11_1-->
+
+<!--lien12-->
+<!--lien12_1-->
+
+<li><a href="/4DCGI/Web_UrbanRechGT/ILUMP6734">Permis de construire</a></li>
+
+<!--lien13-->
+<!--lien13_1-->
+</ul>
+</div>
+
+
+
+<div id="biblio_doc">
+<h3>
+
+Bibliothèque
+ -
+des Archives
+
+</h3>
+<ul>
+<!--lien14-->
+<!--lien14_1-->
+
+
+<li><a href="/4DCGI/Web_BibRechGT/ILUMP6734">Ouvrages</a></li>
+
+<!--lien15-->
+<!--lien15_1-->
+
+
+<li><a href="/4DCGI/Web_documentation/ILUMP6734">Périodiques et Articles de presse</a></li>
+
+<!--lien16-->
+<!--lien16_1-->
+</ul>
+</div>
+
+
+
+
+<div id="index">
+<h3>Index &amp; thesauri</h3>
+<ul>
+<!--lien17-->
+<!--lien17_1-->
+
+<li><a href="/4DCGI/Web_IndexListeAuteurs/ILUMP6734">Auteurs</a></li>
+
+<!--lien18-->
+<!--lien18_1-->
+
+<li><a href="/4DCGI/Web_IndexListeEdifices/ILUMP6734">&Eacute;difices</a></li>
+
+<!--lien19-->
+<!--lien19_1-->
+
+<li><a href="/4DCGI/Web_IndexListeLieux/ILUMP6734">Lieux</a></li>
+
+<!--lien20-->
+<!--lien20_1-->
+
+<!--lien21-->
+<!--lien21_1-->
+
+<li><a href="/4DCGI/Web_IndexListePersonnes/ILUMP6734">Personnes</a></li>
+
+<!--lien22-->
+<!--lien22_1-->
+
+<li><a href="/4DCGI/Web_IndexListeOrganismes/ILUMP6734">Organismes</a></li>
+
+<!--lien23-->
+<!--lien23_1-->
+
+<li><a href="/4DCGI/Web_IndexListeIPS/ILUMP6734"><acronym title="Index Personnalis&eacute;s du Service">Thématiques toulousaines</acronym></a></li>
+
+<!--lien24-->
+<!--lien24_1-->
+
+<li><a href="/4DCGI/Web_ThesLance/ILUMP6734">Thématiques et périodes historiques</a></li>
+
+<!--lien25-->
+<!--lien2581-->
+</ul>
+</div>
+
+
+
+
+<!--#4DENDIF-->
+
+
+</div>
+
+
+<!-- pieds de page / footer -->
+<div id="footer"><span class="menubas">
+<!--lien1-->
+<!--fin1-->
+<!--lien1_1-->
+<!--fin1_1-->
+
+<a href="/4DCGI/Web_Custompage/accessib.shtm/ILUMP6734" accesskey="0" title="politique d&rsquo;accessibilit&eacute;, raccourcis clavier">accessibilit&eacute;</a>&nbsp;|&nbsp;
+
+<!--lien2-->
+<!--fin2-->
+<!--lien2_1-->
+<!--fin2_1-->
+
+<a href="/4DCGI/Web_Custompage/cond_utilisat.shtm/ILUMP6734" accesskey="8">mentions l&eacute;gales</a>&nbsp;|&nbsp;
+
+<!--lien3-->
+<!--fin3-->
+<!--lien3_1-->
+<!--fin3_1-->
+
+<a href="/4DCGI/Web_Custompage/contacts.shtm/ILUMP6734" accesskey="7">contacts</a>&nbsp;|&nbsp;
+
+<!--lien4-->
+<!--fin4-->
+<!--lien4_1-->
+<!--fin4_1-->
+
+<a href="/4DCGI/Web_Custompage/credit.shtm/ILUMP6734">cr&eacute;dits</a>
+
+<!--lien5-->
+<!--fin5-->
+<!--lien5_1-->
+<!--fin5_1-->
+</span>
+<p>AvenioWeb 11.0.5hf9 - Tous droits r&eacute;serv&eacute;s  DIRECTION DES ARCHIVES MUNICIPALES DE TOULOUSE</p>
+<br>
+
+</div>
+<link rel='stylesheet prefetch' href='/htm/codevisu/css/popup.css'>
+<script src='/htm/codeVisu/js/jquery.popup.min.js'></script>
+<script>
+function ouvrirmenu() {
+document.getElementById("menurecherche").style.width = "80%";
+}
+function fermermenu() {
+document.getElementById("menurecherche").style.width = "0%";
+}
+</script>
+
+
+
+</div>
+<script language="JavaScript" type="text/javascript">
+ var t;
+ t = 1;
+ function changerTaille(modif) {
+t = t + modif;
+document.getElementsByTagName("table")[0].style.fontSize = t + "em";
+document.getElementById("blockliste")[0].style.fontSize = t + "em";
+ }
+
+ </script>
+
+</body>
+<!-- fin affichage origine-->
+</html>
