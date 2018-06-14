@@ -1,3 +1,6 @@
+import logging
+import sys
+
 from requests_html import HTMLSession, HTML
 
 
@@ -34,3 +37,29 @@ def __is_class__(element, class_name):
         classes = element.attrs['class']
         return class_name in classes
     return False
+
+
+class CollectionBot(object):
+
+    def __init__(self):
+        self.__session__ = HTMLSession()
+        self.__log__ = logging.getLogger('archivetls')
+        self.__setup_logger__()
+
+    def __setup_logger__(self):
+        """Setting up the LOG."""
+        consolehandler = logging.StreamHandler(stream=sys.stdout)
+        formatter = logging.Formatter(
+            '%(asctime)s    %(levelname)s    %(message)s',
+            '%Y-%m-%d %H:%M:%S')
+        consolehandler.setFormatter(formatter)
+        consolehandler.setLevel(logging.INFO)
+        self.__log__.addHandler(consolehandler)
+        self.__log__.setLevel(logging.DEBUG)
+
+    def description_urls(self):
+        raise NotImplementedError
+
+    def run(self):
+        urls = self.description_urls()
+        self.__log__.debug('URLs: %s', urls)
