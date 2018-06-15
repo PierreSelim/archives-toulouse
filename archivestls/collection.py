@@ -1,7 +1,12 @@
 import logging
+import json
+import os
 import sys
 
 from requests_html import HTMLSession, HTML
+
+
+CACHE_PATH = '.cache_archivetls'
 
 
 def metadata(url, html_session=None):
@@ -41,10 +46,13 @@ def __is_class__(element, class_name):
 
 class CollectionBot(object):
 
-    def __init__(self):
+    def __init__(self, name='default_tls'):
+        self.__bot_name__ = name
         self.__session__ = HTMLSession()
         self.__log__ = logging.getLogger('archivetls')
         self.__setup_logger__()
+        if not os.path.exists(CACHE_PATH):
+            os.mkdir(CACHE_PATH)
 
     def __setup_logger__(self):
         """Setting up the LOG."""
@@ -62,4 +70,12 @@ class CollectionBot(object):
 
     def run(self):
         urls = self.description_urls()
-        self.__log__.debug('URLs: %s', urls)
+        descriptions = {
+            item: {'url_notice': urls[item],
+                   'metadata': metadata(urls[item], html_session=self.__session__)}
+            for item in urls
+        }
+        descr_cache = os.path.join(CACHE_PATH, '{}_descr.json'.format(self.__bot_name__))
+        self.__log__.info('Writing metadata cache in %s', descr_cache)
+        with open(descr_cache, 'w') as f:
+            json.dump(descriptions, f, indent=2, ensure_ascii=False)
