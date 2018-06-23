@@ -2,6 +2,7 @@ import configparser
 import logging
 import json
 import os
+import re
 import sys
 from collections import OrderedDict
 
@@ -92,7 +93,8 @@ class DublinCoreCollectionBot(object):
     def __init__(self,
                  name='archivetls',
                  url=None,
-                 category=None):
+                 category=None,
+                 path=None):
         self.__bot_name__ = name
         self.__url_api__ = url
 
@@ -114,8 +116,12 @@ class DublinCoreCollectionBot(object):
         self.__site__.login(config.get('login', 'user'),
                             config.get('login', 'pass'))
 
-        #category
+        # category
         self.__category__ = category
+
+        # images
+        self.__images_path__ = path
+        self.__images__ = os.listdir(self.__images_path__)
 
     def __setup_logger__(self):
         """Setting up the LOG."""
@@ -180,7 +186,49 @@ class DublinCoreCollectionBot(object):
     def item_mapping(self):
         return None
 
+    def upload_images(self):
+        uploads = OrderedDict()
+        with open(self.__cache_descr__, 'r') as f_descr, open(self.__cache_meta__, 'r') as f_meta:
+            descriptions = json.load(f_descr)
+            metadata = json.load(f_meta)
+            for item in descriptions:
+                fonds_number, file_number = item.split('Fi')
+                self.__log__.info('%s %s', fonds_number, file_number)
+                img = self.image(fonds_number, file_number)
+                if img:
+                    uploads[item] = {
+                        'description': descriptions[item],
+                        'title': ';'.join(
+                            metadata[item]['title']) \
+                                                    .replace('[', '') \
+                                                    .replace(']', '') \
+                                                    .replace('&quot;', '') \
+                                                    .replace('&amp;', '')[0:200] + ' - ' + img,
+                        'file': os.path.join(self.__images_path__, img)
+                    }
+        for item in uploads:
+            upload = uploads[item]
+            page = self.__site__.pages['File:' + upload['title']]
+            if page.exists:
+                self.__log__.info('Skipping %s', upload['title'])
+            else:
+                self.__log__.info('Uploading %s', upload['title'])
+                img = open(upload['file'], 'rb')
+                self.__site__.upload(img, filename=upload['title'], description=upload['description'])
+
+
+    def image(self, fonds_number, file_number):
+        regexp = 'FRAC31555_' + fonds_number + 'Fi' + '0*' + file_number.replace('/', '_0*') + '(\.|_)'
+        for i in self.__images__:
+            if re.match(regexp, i):
+                self.__log__.info('  found %s for %sFi%s',
+                    i,
+                    fonds_number,
+                    file_number)
+                return i
+
     def run(self):
         if not os.path.exists(self.__cache_meta__):
             self.descriptions()
         self.mapping()
+        self.upload_images()
